@@ -59,4 +59,21 @@
 
   ```python
   # Crie o código da interface aqui
+      
+      import abc
+      
+      class CarEngineInterface(abc.ABC):
+         @property
+         def model(self) -> str:
+            pass
+
+         @abc.abstractmethod
+         def start(self) -> str:
+            pass
+
+         @abc.abstractmethod
+         def stop(self) -> str:
+            pass
   ```
+ 
+ 
